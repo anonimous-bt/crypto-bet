@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f2ed;
+    color: #1a1a1a;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1,
+h2 {
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 1px;
+}
+
+.main-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 2rem;
+    background: linear-gradient(135deg, #0a2e1f 0%, #144d34 100%);
+    color: #d4af37;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    border-bottom: 3px solid #b8860b;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e0d8c3;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #0a2e1f;
+    border-bottom: 2px solid #d4af37;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-size: 1.2em;
+}
+
+.info-block span {
+    display: block;
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #b8860b;
+    font-family: 'Playfair Display', serif;
+}
+
+button {
+    background: linear-gradient(to bottom, #d4af37 0%, #b8860b 100%);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    margin: 15px 10px;
+    border-radius: 4px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: 0 4px 0 #8a6d05;
+    transition: all 0.2s;
+}
+
+button:hover {
+    background: linear-gradient(to bottom, #e5c158 0%, #d4af37 100%);
+    transform: translateY(-1px);
+}
+
+button:active {
+    transform: translateY(2px);
+    box-shadow: 0 1px 0 #8a6d05;
+}
+
+input,
+select {
+    border: 1px solid #d4af37;
+    background-color: #fffcf5;
+    padding: 8px;
+    margin: 5px;
+    border-radius: 4px;
+    color: #1a1a1a;
+}
+
+.ball {
+    background: radial-gradient(circle at 30% 30%, #ffffff, #d4af37);
+    color: #0a2e1f;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 50%;
+    font-weight: bold;
+    border: 2px solid #b8860b;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    display: inline-block;
+}
+
+.winner-ball {
+    background: radial-gradient(circle at 30% 30%, #ffffff, #d44e37);
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 34px;
+    height: 18px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #444;
+    transition: .4s;
+    border-radius: 34px;
+    border: 1px solid #d4af37;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 12px;
+    width: 12px;
+    left: 2px;
+    bottom: 2px;
+    background-color: #d4af37;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked+.slider {
+    background-color: #144d34;
+}
+
+input:checked+.slider:before {
+    transform: translateX(16px);
+    background-color: #fff;
+}
+
+.label-text {
+    font-size: 13px;
+    font-weight: bold;
+    color: #d4af37;
+}
+
+footer {
+    margin-top: 60px;
+    padding: 30px 0;
+    background-color: #0a2e1f;
+    color: #d4af37;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 2px;
+}
+
+.steps {
+    background: rgba(247, 147, 26, 0.05);
+    padding: 25px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.step-item {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.step-number {
+    background: var(--primary);
+    color: #d4af37;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin-right: 15px;
+    flex-shrink: 0;
+}
+
+.material-icons {
+    font-size: 16px;
+}
+
+.copy-link-button {
+    margin: 5px;
+    padding: 8px;
+    height: 100%;
+    box-shadow: none;
+}
+
+.copy-link {
+    justify-content: center;
+    max-height: 50px;
+    display: flex;
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BTC - Lottery</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" href="../img/logo.PNG">
+
+    <meta name="description" content="Lottery based on blockchain transactions, simple and transparent. Just transfer to our wallet and you are already participating">
+    <meta name="keywords" content="lottery, crypto, bet, lottery-crypto, btc, money, blockchainn">
+    <link rel="canonical" href="https://lotto-btc.com/en">
+    <meta property="og:title" content="Lottery on blockchain | BTC - Lottery">
+    <meta property="og:description" content="Lottery based on blockchain transactions, simple and transparent. Just transfer to our wallet and you are already participatin">
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="header-left"></div>
+        <h1>BTC Lottery</h1>
+        <div class="header-controls">
+            <!--
+            <div class="control-item">
+                <span class="label-text">Local env</span>
+                <label class="switch">
+                    <input type="checkbox" id="env-selector">
+                    <span class="slider"></span>
+                </label>
+            </div>
+        -->
+            <div class="control-item">
+                <select id="language-selector">
+                    <option value="EN">English</option>
+                    <option value="ZH">中國人</option>
+                    <option value="HI">हिंदी</option>
+                    <option value="ES">Español</option>
+                    <option value="FR">Français</option>
+                    <option value="AR">العَرَبِيَّة</option>
+                    <option value="BN">বাংলা</option>
+                    <option value="RU">Русский</option>
+                    <option value="PT">Português</option>
+                    <option value="ID">Indonesia</option>
+                </select>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="next-draw" class="card">
+        </section>
+
+        <section class="card">
+            <section id="wallet"></section>
+            <div class="copy-link">
+                <input type="text" class="copy-link-input" id="copy-link-input" readonly>
+                <button type="button" id="copy-link-button" class="copy-link-button">
+                    <i class="material-icons">content_copy</i>
+                </button>
+            </div>
+             <canvas  id="qrcode"></canvas>
+        </section>
+
+        <section id="past-draws" class="card">
+            <div id="past-draws-header"></div>
+            <input type="number" id="draw-input" />
+            <button id="search-draw-result"></button>
+            <div id="past-draws-result-section" class="result-display">
+            </div>
+        </section>
+
+        <section id="validate-numbers" class="card">
+            <div id="validate-numbers-header"></div>
+            <input type="text" id="validate-numbers-input">
+            <button id="validate-numbers-btn"></button>
+            <div id="validate-numbers-result" class="result-display">
+            </div>
+        </section>
+
+        <section id="how-to-participate" class="card full-width">
+        </section>
+
+        <section id="rules-container" class="card full-width">
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; BTC Lottery</p>
+    </footer>
+
+    <script type="text/javascript" src="../bundle.js"></script>
+</body>
+
+
+</html>

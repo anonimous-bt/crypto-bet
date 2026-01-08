@@ -32,7 +32,7 @@ function getValidTransaction(transaction) {
     const wallet = constants.DRAW_INFO[`draw_${draw.draw}`].wallet_id
     const validOutputs = transaction.outputs.filter(out =>
         out.address === wallet
-        && out.value >= 11 // constants.BASE_VALUE_SATOSHI
+        && out.value >= constants.BASE_VALUE_SATOSHI
     )
     const validInput = transaction.inputs.length === 1 // will only consider valid a transaction with one input
     if (validOutputs.length > 0 && validInput) {
@@ -40,7 +40,7 @@ function getValidTransaction(transaction) {
             id: transaction.id,
             block_height: transaction.block_height,
             sender_address: transaction.inputs[0],
-            value: validOutputs[0].value * 10//value in satoshis
+            value: validOutputs[0].value //value in satoshis
         })
     }
     return null
@@ -109,4 +109,5 @@ module.exports = {
     getWinner,
     getValidTransaction,
     getTransactionInformationById
+
 }

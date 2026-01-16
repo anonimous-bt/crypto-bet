@@ -324,7 +324,7 @@ function rulesSection() {
             <section>
                 <h2>${translate('rules_section_4_title')}</h2>
                 <p>${translate('rules_section_4_text')}</p>
-                <a href="https://github.com/anonimous-bt/btc-lottery" class="btn-github">
+                <a href="https://github.com/anonimous-bt/crypto-bet" class="btn-github">
                     ${translate('rules_github_btn')}
                 </a>
             </section>
@@ -386,5 +386,6 @@ window.onload = async () => {
     await setTexts(false)
     addListeners()
 }
+
 
 

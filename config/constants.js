@@ -33,6 +33,9 @@ const DRAW_INFO = {
     draw_3: {
         wallet_id: "bc1q07fchggzer6glj9wqzzfdxgyhgjmdscx9xlcv4",
     },
+    draw_4: {
+        wallet_id: "bc1qexrf2yunmgtfmjtj8hsepyr294u8kzld4kz87r",
+    },
     draw_52: {
         wallet_id: "bc1qmry28q9s4ynzwp0sc00t3758crexerrretwsun",
     }
@@ -56,4 +59,5 @@ module.exports = {
     DRAW_INFO,
 
 }
+
 

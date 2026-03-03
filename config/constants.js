@@ -45,6 +45,18 @@ const DRAW_INFO = {
     draw_7: {
         wallet_id: "bc1qy65409exry78pjyh5y27vursuvvadtulmyqwl6",
     },
+    draw_8: {
+        wallet_id: "bc1qkaaudh63qjz6ajh367fzz97ffjuvm2rv0zl5zm",
+    },
+    draw_9: {
+        wallet_id: "bc1qzvy0htzxlq6ce03uq9mltrq6s03705ukw3ar0j",
+    },
+    draw_10: {
+        wallet_id: "bc1qfr0l79anfyfrpensyke8n92gcfelf6a9j4q4rn",
+    },
+    draw_11: {
+        wallet_id: "bc1qdtuwsxxmqju8cznx6nfjna89rpera9azl0qeww",
+    },
     draw_52: {
         wallet_id: "bc1qmry28q9s4ynzwp0sc00t3758crexerrretwsun",
     }
@@ -68,6 +80,7 @@ module.exports = {
     DRAW_INFO,
 
 }
+
 
 
 
